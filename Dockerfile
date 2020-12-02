@@ -8,7 +8,7 @@ FROM registry.access.redhat.com/ubi8/ubi
 
 RUN dnf install -y java-11-openjdk.x86_64
 
-ENV FOO=BAR
+ENV FOO=BAZ
 
 COPY --from=builder /home/gradle/build/libs/server.jar ./server.jar
 
